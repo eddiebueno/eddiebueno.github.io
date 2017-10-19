@@ -1,46 +1,88 @@
-h1{
-	font-size: 36px;
-	text-align: center;
-	color: navy;
-	background-color:yellow;
+/*html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
 }
 
-section{
-	text-align:center;
-	color: black;
-	background-color:green;
-	background-position: left;
-	border: medium double blue;
-	font-family:Papyrus;
-}
-nav{
-	font-family:Arial;
-	text-align:center;
-}
-.hline{
-	width:80%;
-	height:1px;
-	background: black; 
-	background-position: center;
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
 }
 
-span{
-	font-size: xx-large;
-	font-family: Impact;
-	color: red;
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
 }
 
-<style type="text/css">
-  ul {list-style: none;padding: 0px;margin: 0px;}
-  ul li {display: block;position: relative;float: left;border:1px solid #000}
-  li ul {display: none;}
-  ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
-           white-space: nowrap;color: #fff;}
-  ul li a:hover {background: #f00;}
-  li:hover ul {display: block; position: absolute;}
-  li:hover li {float: none;}
-  li:hover a {background: #f00;}
-  li:hover li a:hover {background: #000;}
-  #drop-nav li ul li {border-top: 0px;}
-</style>
+.bg-dark {
+    background-color: #343a40!important;
+}
 
+.collapse {
+    display: none;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.py-4 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+
+*/
