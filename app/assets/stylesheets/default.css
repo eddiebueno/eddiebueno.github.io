@@ -144,9 +144,14 @@
   textarea {
       resize: none;
   }
+  .clink{
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+  }
   .plink{
     position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+    bottom: 10%;
+    left: 5%;
+  }  
 
