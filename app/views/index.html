@@ -2,43 +2,132 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Eddie Bueno's Website</title>
 
 
 <!-- Bootstrap -->
-    	<link href="../assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="../assets/default.css">
 
 	</head>
-	<body>
-		<div class="navbar navbar-default navbar-fixed-top">
-			<div class="bg-dark collapse" id="navbarHeader">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 py-4">
-							<h4 class="text-white">About</h4>
-							<p class="text-muted">My name is Eddie Bueno. More informtion is to come.</p>
-						</div>
-						<div class = "col-sm-4 py-4">
-							<h4 class="text-white">Contact</h4>
-							<ul class="list-unstyled">
-								<li><a href="facebook.com/eddiebueno" class="text-white">Facebook</a></li>
-								<li><a href="linkedin.com/in/eddiebueno" class="text-white">LinkedIn</a></li>
-								<li><a href="twitter.com/eddie_in_tech" class="text-white">Twitter</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="navbar navbar-dark bg-dark">
-				<div class="container d-flex justify-content-between">
-					<a href="/" class="navbar-brand">EB</a>
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapsed" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+	<body id="myPage" data-spy="scroll" dat-target=".navbar" data-offset="50">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbarHeader">
+					<button type="button" class="navbar-toggle" data-toggle = "collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
 					</button>
+					<a class="navbar-brand" href="#myPage">Eddie Bueno</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li class="dropdown">
+							<a class ="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.facebook.com/eddiebueno93" class="text-white">Facebook</a></li>
+								<li><a href="http://www.linkedin.com/in/eddiebueno" class="text-white">LinkedIn</a></li>
+								<li><a href="http://www.twitter.com/eddie_in_tech" class="text-white">Twitter</a></li>
+							</ul>
+						</li>
+					</ul>  
 				</div>
 			</div>
+		</nav>
+		<div>
+
 		</div>
+
+		<!-- About -->
+		<div id="about" class="container text-center">
+		  <h3>About</h3>
+		  <p><em>Who am I?</em></p>
+		  <p>Well you have stumbled onto something haven't you? Well my name is Eddie Bueno. I am a UC Berkeley and Dev Bootcamp Alum, looking for a job as a software engineer. On my journey I have experienced many things. Some of my projects will be on display for you to see. Anyway this is just a temporary about me section. Updated version coming soon .....</p>
+		</div>
+
+		<!-- Portfolio -->
+		<div id="portfolio" class="bg-1">
+		  <div class="container">
+		    <h3 class="text-center">Portfolio</h3>
+		    <p class="text-center">Here is a list of some of my recent projects.</p>
+		    
+		    <div class="row text-center">
+		      <div class="col-sm-6">
+		        <div class="thumbnail">
+		          <img class="img" src="/../assets/Pocket_Board.png" alt="pocketboard" width="400" height="300">
+		          <p><strong>Pocket Board</strong></p>
+		          <a class= "btn plink" href="http://pocketboard.herokuapp.com">Source</a>
+		          <a class= "btn clink" href="https://github.com/wly731/Pocket-Board">Code</a>
+		        </div>
+		      </div>
+		      <div class="col-sm-6">
+		        <div class="thumbnail">
+		          <img class="img" src="/assets/MusicLAB.png" alt="musiclab" width="400" height="300">
+		          <p><strong>Music LAB</strong></p>
+		          <a class= "btn clink" href="https://github.com/eddiebueno/MusicLAB">Code</a>
+		          <a class = "btn blink" href="https://www.dropbox.com/s/em79ljzbaw7w8jr/177%20Presentation.pdf?dl=0">Source</a>
+		        </div>
+		      </div>
+		      <div class="col-sm-6">
+		        <div class="thumbnail">
+		          <img class="img" src="/../assets/VGL.png" alt="vgl" width="400" height="300">
+		          <p><strong>Video Game Learning</strong></p>
+		          <a class= "btn clink" href="https://github.com/VideoGameLearning/vgl">Code</a>
+		        </div>
+		      </div>
+			<div class="col-sm-6">
+		        <div class="thumbnail">
+		          <img class="img" src="/../assets/IGB.png" alt="igbskindesign" width="400" height="300">
+		          <p><strong>IGB Skin Design</strong></p>
+		          <button class="btn plink" data-toggle="modal" data-target="#myModal">Source</button>
+		        </div>
+		      </div>
+
+		    </div>
+		  </div>
+
+
+		<script>
+		$(document).ready(function(){
+		  // Initialize Tooltip
+		  $('[data-toggle="tooltip"]').tooltip(); 
+		  
+		  // Add smooth scrolling to all links in navbar + footer link
+		  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 900, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		})
+		</script>
+	</body>
+</html>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <!-- Include all compiled plugins (below), or include individual files as needed -->
