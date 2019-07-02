@@ -1,8 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   font-family: "Rubik";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 .backdrop{
@@ -13,4 +18,59 @@ body{
   left:0;
   background-color:lavender;
   opacity: 0.8;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 1% 0;
+  background-color: grey;
+}
+
+header{
+  padding: 12% 0;
+}
+
+section{
+  padding: 6% 0;
+  background-color: lightgray;
+}
+
+section:nth-child(even){
+  background-color: darkgrey;
+}
+
+p{
+  padding: 0 5%;
+}
+
+.name{
+  
+  text-align: left;
+  padding: 0 1%;
+}
+
+.links{
+  text-align:right;
+}
+
+.Project{
+  height: 700px;;
+}
+
+.Project:nth-child(odd){
+  background-color: dimgray;
+}
+
+img{
+  width: 95%;
+  height: auto;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
 }
