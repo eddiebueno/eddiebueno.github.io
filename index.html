@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Eddie Bueno's Website</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="index.js"></script>
 </head>
@@ -13,11 +14,10 @@
   <nav role="navigation">
     <div class="name">Eddie Bueno</div>
     <div class="links">
-      <a href="#Bio">Bio</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Projects">Projects</a>
-      <a href="#About">About</a>
-      <a href="#Contact">Contact Info</a>
+      <a class="link" href="#Bio">Bio</a>
+      <a class="link" href="#Skills">Skills</a>
+      <a class="link" href="#Projects">Projects</a>
+      <a class="link" href="#Contact">Contact Info</a>
     </div>
   </nav>
   <main> 
@@ -31,54 +31,7 @@
           freshman year of college, I knew instantly that I wanted to become a coder. I sought out to continuously train and 
           keep my skills up-to-date in order to solve complex and unique coding challenges.  I am constantly pushing myself so 
           that I can continue to learn and grow as a developer. </p>
-    </section>
-    <section>
-      <a name="Skills">
-        <h2>Skills</h2>
-      </a>
-      <div class="skills flex-container">
-        <i>React</i>
-        <i>JavaScript</i>
-        <i>HTML5</i>
-        <i>CSS3</i>
-        <i>NodeJs</i>
-        <i>Express</i>
-        <i>PostgreSQL</i>
-        <i>SQL</i>
-        <i>Python</i>
-        <i>Java</i>
-        <i>Ruby</i>
-        <i>Rails</i>
-        <i>JQuery</i>
-        <i>Mocha</i>
-      </div>
-    </section>
-    <section class="Projects">
-      <a name="Projects">
-        <h2>Projects</h2>
-      </a>
-      <ul>
-        <li class="Project">
-          <h3>Movie Reviews</h3>
-          <img name="Image of Project">
-          <p>Short Description</p>
-          <p>Link/Tech Stack Used</p>
-        </li>
-        <li class = "Project">
-          <h3>Pocket Board</h3>
-          <img class="project-img" name="Image of Project" src="./images/Pocket_Board.png">
-          <p>Simplified investment portfolio designed to make stock trading and money management an engaging process for anyone</p>
-          <p>Rails, HTML, CSS, JavaScript, jQuery, PostgreSQL, Quandl API, New York Times API, Heroku</p>
-          <a href="">Code</a>
-          <a href="">Live</a>
-        </li>
-      </ul>
-    </section>
-    <section class="AboutMe">
-      <a name="About">
-        <h2>About Me:</h2>
-      </a>
-      <h3>Hobbies:</h3>
+          <h3>Hobbies:</h3>
         <ul>
           <li>Playing video games</li>
           <li>Going to the movies</li>
@@ -91,6 +44,98 @@
         <li>Movie: The Dark Knight</li>
         <li>Show: Stranger Things</li>
         <li>Artist: STFKR</li>
+      </ul>
+
+    </section>
+    <section>
+      <a name="Skills">
+        <h2>Skills</h2>
+      </a>
+      <div class="skills grid-container">
+        <i class='devicon-react-original-wordmark grid-item'></i>
+        <i class='devicon-javascript-plain grid-item'></i>
+        <i class='devicon-html5-plain-wordmark grid-item'></i>
+        <i class='devicon-css3-plain-wordmark grid-item'></i>
+        <i class='devicon-nodejs-plain-wordmark grid-item'></i>
+        <i class='devicon-express-original-wordmark grid-item'></i>
+        <i class='devicon-postgresql-plain-wordmark grid-item'></i>
+        <i class='devicon-python-plain-wordmark grid-item'></i>
+        <i class='devicon-java-plain-wordmark grid-item'></i>
+        <i class='devicon-ruby-plain-wordmark grid-item'></i>
+        <i class='devicon-rails-plain-wordmark grid-item'></i>
+        <i class='devicon-jquery-plain-wordmark grid-item'></i>
+        <i class='devicon-mocha-plain grid-item'></i>
+        <i class='devicon-heroku-original-wordmark grid-item'></i>
+        <i class='devicon-git-plain-wordmark grid-item'></i>
+        <i class='devicon-github-plain-wordmark grid-item'></i>
+      </div>
+    </section>
+    <section class="Projects">
+      <a name="Projects">
+        <h2>Projects</h2>
+      </a>
+      <ul>
+          <li class="Project">
+            <h3 class="project-name">BidHub</h3> 
+            | 
+            <a href="https://github.com/thinkful-ei-bee/A-team-capstone">Code</a>
+            <a href="https://bidhub.now.sh/landing">Live</a>
+              
+              <img name="BidHub homepage" src="./images/BidHub.png">
+              <p>A React / Express app to help developers connect and collaborate on their coding projects. Users create project descriptions and open them to bidders. Once accepted, collaboration can begin. The app allows for real time communication between collaborators on the project page.</p>
+              <div class='tech-stack'>Tech Stack Used:
+                  <i class='devicon-react-original-wordmark'></i>
+                  <i class='devicon-express-original-wordmark'></i> 
+                  <i class='devicon-nodejs-plain-wordmark'></i>
+                  <i class='devicon-html5-plain-wordmark'></i>
+                  <i class='devicon-css3-plain-wordmark'></i>
+                  <i class='devicon-javascript-plain'></i>
+                  <i class='devicon-mocha-plain'></i>
+                  <i class='devicon-postgresql-plain-wordmark'></i>
+                  <i class='devicon-heroku-original-wordmark'></i>
+                  <i class='devicon-travis-plain-wordmark'></i>
+                </div>
+            </li>
+        <li class="Project">
+          <h3 class="project-name">Movie Reviews</h3>
+          |
+          <a href="https://github.com/eddiebueno/movie-manager-app">Code</a>
+          <a href="https://movie-app.eddiebueno.now.sh/">Live</a>
+          <img name="Movie Reviews homepage" src="./images/Movie_app.png">
+          <p>A React app aimed towards simplifying the movie reviewing experience that allows a user to search through movies and review them.</p>
+          <div class='tech-stack'>Tech Stack Used:
+              <i class='devicon-react-original-wordmark'></i>
+              <i class='devicon-express-original-wordmark'></i> 
+              <i class='devicon-nodejs-plain-wordmark'></i>
+              <i class='devicon-html5-plain-wordmark'></i>
+              <i class='devicon-css3-plain-wordmark'></i>
+              <i class='devicon-javascript-plain'></i>
+              <i class='devicon-mocha-plain'></i>
+              <i class='devicon-postgresql-plain-wordmark'></i>
+              <i class='devicon-heroku-original-wordmark'></i>
+            </div>
+        </li>
+        <li class = "Project">
+          <h3 class="project-name">Pocket Board</h3>
+          |
+          <a href="https://github.com/wly731/Pocket-Board">Code</a>
+          <a href="http://pocketboard.herokuapp.com/">Live</a>
+          <img class="project-img" name="Pocket Board homepage" src="./images/Pocket_Board.png">
+          <p>Simplified investment portfolio designed to make stock trading and money management an engaging process for anyone</p>
+          <div class='tech-stack'>Tech Stack Used:
+            <i class='devicon-ruby-plain-wordmark'></i>
+            <i class='devicon-rails-plain-wordmark'></i> 
+            <i class='devicon-html5-plain-wordmark'></i>
+            <i class='devicon-css3-plain-wordmark'></i>
+            <i class='devicon-javascript-plain'></i>
+            <i class='devicon-jquery-plain-wordmark'></i>
+            <i class='devicon-postgresql-plain-wordmark'></i>
+            <i class='devicon-heroku-original-wordmark'></i>
+          </div>
+          <div class='other-tools'>
+          Other Tools Used: Quandl API & New York Times API
+        </div>
+        </li>
       </ul>
     </section>
   </main>
